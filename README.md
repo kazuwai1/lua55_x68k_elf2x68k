@@ -10,9 +10,10 @@ XC lib版との大きな違いは以下になります。
 
 ### lua-cjsonモジュールを使ってみたい人
 * cjson.decode/cjson.encodeは標準で組み込まれているためrequire("cjson")しなくても使えます
-* cjson.utilを使いたい場合は install/luamod の中身を環境変数 LUA_PATH に含まれるディレクトリにコピーして require("cjson.util")して使用します  
-* ( LUA_PATHの設定例 : LUA_PATH=;;A:\\luamod\\?.lua;A:\\luamod\\?.luac )
-* lua_cjsonのAPI関数については [このあたり](https://github.com/kazuwai1/lua_cjson_x68k/blob/main/README_orig.md)を参照してください
+* cjson.utilを使いたい場合は以下の手順を実施しておいて require("cjson.util") して使用します  
+    * install/luamodフォルダの中身を環境変数 LUA_PATH に含まれるディレクトリにコピーする
+    * ( LUA_PATHの設定例 : LUA_PATH=;;A:\\luamod\\?.lua;A:\\luamod\\?.luac )
+* lua_cjsonのAPI関数については [このあたり](https://github.com/kazuwai1/lua_cjson_x68k/blob/main/README_orig.md)や[このあたり](https://github.com/kazuwai1/lua_cjson_x68k/blob/main/manual.adoc)を参照してください
 
 ### LuaのC言語プログラムへの組み込みも試してみたい人
 * install/libの中の "lualib.a" をターゲットプログラムと一緒にリンクしてください
