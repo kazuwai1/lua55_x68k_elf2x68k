@@ -1,12 +1,12 @@
 # lua-5.5 for x68k(elf2x68k)
-Lua 5.5.0 を elf2x68kを使ってx68k向けにビルドしてみました。  
+Lua 5.5.1 を elf2x68kを使ってx68k向けにビルドしてみました。  
 XC lib版との大きな違いは以下になります。
 * 整数型データが64bit intです
 * X-BASIC互換関数は非対応です
 
 ## インストール
 ### とにかくインタプリタを使ってみたい人
-* install/bin の中にある"lua.x" と "luac.x"を環境変数PATHに含まれるディレクトリにコピーして lua.x を起動してください
+* install/bin の中にある"lua.x(or lua64.x)" と "luac.x(or luc64.x)"を環境変数PATHに含まれるディレクトリにコピーして lua.x(lua64.x) を起動してください
 
 ### lua-cjsonモジュールを使ってみたい人
 * cjson.decode/cjson.encodeは標準で組み込まれているためrequire("cjson")しなくても使えます
@@ -39,8 +39,8 @@ XC lib版との大きな違いは以下になります。
 elf2x68k環境でビルドできます。私はdebianにインストールした環境でビルドしています
 
 ## ビルドについて
-* lua-5.5.0ディレクトリで make すればビルドが走るようにしています
-* lua-5.5.0ディレクトリで make local すると install ディレクトリに以下のファイルがコピーされます
+* lua-5.5.1ディレクトリで make すればビルドが走るようにしています
+* lua-5.5.1ディレクトリで make local すると install ディレクトリに以下のファイルがコピーされます
     * install/bin : lua.x および luac.x
     * install/include : 他のアプリに組み込む際に必要になるヘッダファイル
     * install/lib     : 他のアプリに組み込む際に必要になるライブラリファイル
