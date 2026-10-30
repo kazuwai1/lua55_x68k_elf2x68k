@@ -13,7 +13,7 @@
 
 #if defined(__human68k__)
 #define LUA_USE_READLINE
-#define LUA_X68K_VERSION " (for x68k_elf2x68k r2)"
+#define LUA_X68K_VERSION " (for x68k_elf2x68k r3)"
 #endif
 
 /*

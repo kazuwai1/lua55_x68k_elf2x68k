@@ -55,6 +55,9 @@ LUAMOD_API int (luaopen_table) (lua_State *L);
 LUAMOD_API int (luaopen_utf8) (lua_State *L);
 
 #if defined(__human68k__)
+#define IOCS_MODNAME    "iocs"
+LUAMOD_API int (luaopen_iocs) (lua_State *L);
+
 #define CJSON_MODNAME	"cjson"
 LUAMOD_API	int (luaopen_cjson) (lua_State *L);
 
